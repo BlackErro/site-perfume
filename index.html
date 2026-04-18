@@ -68,45 +68,106 @@
                     <p class="section-subtitle">Uma seleção cuidadosa dos perfumes mais cobiçados do mundo.</p>
                 </div>
 
-                <div class="products-grid">
-                    <!-- Produto 1 -->
-                    <div class="product-card animate-on-scroll">
-                        <div class="product-img-wrapper">
-                            <img src="./assets/woody.png" alt="Perfume Amadeirado Masculino" class="product-img">
-                            <div class="product-badge">Mais vendido</div>
+                <!-- Category Filters (Tabs) -->
+                <div class="category-tabs animate-on-scroll">
+                    <button class="category-btn active" data-target="masculino">
+                        <i data-lucide="user"></i>
+                        Masculino
+                    </button>
+                    <button class="category-btn" data-target="feminino">
+                        <i data-lucide="flower-2"></i>
+                        Feminino
+                    </button>
+                </div>
+
+                <!-- Masculino Section -->
+                <div class="category-content active animate-on-scroll" id="categoria-masculino">
+                    <div class="category-header">
+                        <h3>Perfumes Masculinos</h3>
+                        <p>Fragrâncias intensas, sóbrias e marcantes.</p>
+                    </div>
+                    <div class="products-grid">
+                        <div class="product-card card-dark">
+                            <div class="product-img-wrapper">
+                                <img src="./assets/woody.png" alt="Perfume Amadeirado Intenso" class="product-img">
+                                <div class="product-badge">Mais vendido</div>
+                            </div>
+                            <div class="product-info">
+                                <h3 class="product-name">Amadeirado Intenso</h3>
+                                <p class="product-desc">Notas profundas de madeira e especiarias para uma presença marcante.</p>
+                                <span class="product-price">R$ 389,90</span>
+                                <button class="btn btn-primary btn-block">Comprar</button>
+                            </div>
                         </div>
-                        <div class="product-info">
-                            <h3 class="product-name">Perfume Amadeirado</h3>
-                            <p class="product-category">Masculino</p>
-                            <span class="product-price">R$ 389,90</span>
-                            <button class="btn btn-primary btn-block">Comprar</button>
+
+                        <div class="product-card card-dark" style="transition-delay: 100ms;">
+                            <div class="product-img-wrapper">
+                                <img src="./assets/citrus.png" alt="Perfume Cítrico Refrescante" class="product-img">
+                            </div>
+                            <div class="product-info">
+                                <h3 class="product-name">Cítrico Refrescante</h3>
+                                <p class="product-desc">Energia e frescor com toques de limão siciliano e notas aquáticas.</p>
+                                <span class="product-price">R$ 349,90</span>
+                                <button class="btn btn-primary btn-block">Comprar</button>
+                            </div>
+                        </div>
+
+                        <div class="product-card card-dark" style="transition-delay: 200ms;">
+                            <div class="product-img-wrapper">
+                                <img src="./assets/amber.png" alt="Perfume Ambarado Premium" class="product-img">
+                            </div>
+                            <div class="product-info">
+                                <h3 class="product-name">Ambarado Premium</h3>
+                                <p class="product-desc">Luxo engarrafado. Âmbar aquecido com facetas orientais sedutoras.</p>
+                                <span class="product-price">R$ 499,90</span>
+                                <button class="btn btn-primary btn-block">Comprar</button>
+                            </div>
                         </div>
                     </div>
+                </div>
 
-                    <!-- Produto 2 -->
-                    <div class="product-card animate-on-scroll" style="transition-delay: 100ms;">
-                        <div class="product-img-wrapper">
-                            <img src="./assets/floral.png" alt="Perfume Floral Feminino" class="product-img">
-                            <div class="product-badge">Lançamento</div>
-                        </div>
-                        <div class="product-info">
-                            <h3 class="product-name">Elegance Floral</h3>
-                            <p class="product-category">Feminino</p>
-                            <span class="product-price">R$ 419,90</span>
-                            <button class="btn btn-primary btn-block">Comprar</button>
-                        </div>
+                <!-- Feminino Section -->
+                <div class="category-content animate-on-scroll" id="categoria-feminino">
+                    <div class="category-header female-header">
+                        <h3>Perfumes Femininos</h3>
+                        <p>Suaves, elegantes e profundamente graciosos.</p>
                     </div>
-
-                    <!-- Produto 3 -->
-                    <div class="product-card animate-on-scroll" style="transition-delay: 200ms;">
-                        <div class="product-img-wrapper">
-                            <img src="./assets/arabic.png" alt="Perfume Árabe Intenso" class="product-img">
+                    <div class="products-grid">
+                        <div class="product-card card-light">
+                            <div class="product-img-wrapper">
+                                <img src="./assets/floral.png" alt="Perfume Floral Delicado" class="product-img">
+                                <div class="product-badge">Lançamento</div>
+                            </div>
+                            <div class="product-info">
+                                <h3 class="product-name">Floral Delicado</h3>
+                                <p class="product-desc">Um buquê suave de rosas brancas, jasmim e um toque de baunilha.</p>
+                                <span class="product-price">R$ 419,90</span>
+                                <button class="btn btn-primary btn-block">Comprar</button>
+                            </div>
                         </div>
-                        <div class="product-info">
-                            <h3 class="product-name">Oud Intenso Árabe</h3>
-                            <p class="product-category">Unissex</p>
-                            <span class="product-price">R$ 549,90</span>
-                            <button class="btn btn-primary btn-block">Comprar</button>
+
+                        <div class="product-card card-light" style="transition-delay: 100ms;">
+                            <div class="product-img-wrapper">
+                                <img src="./assets/hero.png" alt="Perfume Doce Marcante" class="product-img">
+                            </div>
+                            <div class="product-info">
+                                <h3 class="product-name">Doce Marcante</h3>
+                                <p class="product-desc">Para mulheres decididas. Uma fusão de caramelo, praliné e frutas vermelhas.</p>
+                                <span class="product-price">R$ 389,90</span>
+                                <button class="btn btn-primary btn-block">Comprar</button>
+                            </div>
+                        </div>
+
+                        <div class="product-card card-light" style="transition-delay: 200ms;">
+                            <div class="product-img-wrapper">
+                                <img src="./assets/arabic.png" alt="Perfume Oriental Elegante" class="product-img">
+                            </div>
+                            <div class="product-info">
+                                <h3 class="product-name">Oriental Elegante</h3>
+                                <p class="product-desc">O mistério do oriente envolto em notas de sândalo, musk e flores exóticas.</p>
+                                <span class="product-price">R$ 459,90</span>
+                                <button class="btn btn-primary btn-block">Comprar</button>
+                            </div>
                         </div>
                     </div>
                 </div>

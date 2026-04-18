@@ -76,6 +76,27 @@ document.addEventListener('DOMContentLoaded', () => {
     const animatedElements = document.querySelectorAll('.animate-on-scroll');
     animatedElements.forEach(el => observer.observe(el));
 
+    // 4.5 Category Tabs Logic
+    const categoryBtns = document.querySelectorAll('.category-btn');
+    const categoryContents = document.querySelectorAll('.category-content');
+
+    categoryBtns.forEach(btn => {
+        btn.addEventListener('click', () => {
+            categoryBtns.forEach(b => b.classList.remove('active'));
+            categoryContents.forEach(c => c.classList.remove('active'));
+
+            btn.classList.add('active');
+            const targetId = btn.getAttribute('data-target');
+            document.getElementById(`categoria-${targetId}`).classList.add('active');
+            
+            const newContent = document.getElementById(`categoria-${targetId}`);
+            newContent.style.animation = 'none';
+            setTimeout(() => {
+                newContent.style.animation = 'fadeIn 0.5s ease';
+            }, 10);
+        });
+    });
+
     // 5. Form Submit (Mock)
     const contactForm = document.getElementById('contactForm');
     if(contactForm) {

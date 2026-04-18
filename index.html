@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Essência Suprema - Perfumes importados e nacionais com qualidade premium. Descubra sua fragrância ideal.">
+    <title>Essência Suprema | Perfumes Premium</title>
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+    
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://unpkg.com/lucide@latest/dist/umd/lucide.css">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- 1. Header -->
+    <header class="header" id="header">
+        <div class="container header-content">
+            <a href="#" class="logo">
+                <span class="logo-text">Essência Suprema</span>
+            </a>
+            
+            <nav class="nav" id="nav">
+                <ul class="nav-list">
+                    <li><a href="#inicio" class="nav-link active">Início</a></li>
+                    <li><a href="#produtos" class="nav-link">Produtos</a></li>
+                    <li><a href="#sobre" class="nav-link">Sobre</a></li>
+                    <li><a href="#contato" class="nav-link">Contato</a></li>
+                </ul>
+            </nav>
+
+            <a href="#produtos" class="btn btn-outline">Comprar Agora</a>
+            
+            <button class="mobile-menu-btn" id="mobile-menu-btn" aria-label="Abrir menu">
+                <i data-lucide="menu"></i>
+            </button>
+        </div>
+    </header>
+
+    <main>
+        <!-- 2. Hero Banner -->
+        <section class="hero" id="inicio">
+            <div class="hero-bg">
+                <div class="hero-overlay"></div>
+                <img src="./assets/hero.png" alt="Perfume sofisticado" class="hero-img">
+            </div>
+            
+            <div class="container hero-content animate-on-scroll">
+                <span class="hero-subtitle-top">Coleção Exclusiva</span>
+                <h1 class="hero-title">Descubra sua fragrância ideal</h1>
+                <p class="hero-subtitle">Perfumes importados e nacionais com qualidade premium. Desperte sensações únicas em cada gota.</p>
+                <div class="hero-actions">
+                    <a href="#produtos" class="btn btn-primary">Ver Coleção</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- 3. Products Section -->
+        <section class="products section" id="produtos">
+            <div class="container">
+                <div class="section-header animate-on-scroll">
+                    <h2 class="section-title">Nossas Fragrâncias</h2>
+                    <p class="section-subtitle">Uma seleção cuidadosa dos perfumes mais cobiçados do mundo.</p>
+                </div>
+
+                <div class="products-grid">
+                    <!-- Produto 1 -->
+                    <div class="product-card animate-on-scroll">
+                        <div class="product-img-wrapper">
+                            <img src="./assets/woody.png" alt="Perfume Amadeirado Masculino" class="product-img">
+                            <div class="product-badge">Mais vendido</div>
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-name">Perfume Amadeirado</h3>
+                            <p class="product-category">Masculino</p>
+                            <span class="product-price">R$ 389,90</span>
+                            <button class="btn btn-primary btn-block">Comprar</button>
+                        </div>
+                    </div>
+
+                    <!-- Produto 2 -->
+                    <div class="product-card animate-on-scroll" style="transition-delay: 100ms;">
+                        <div class="product-img-wrapper">
+                            <img src="./assets/floral.png" alt="Perfume Floral Feminino" class="product-img">
+                            <div class="product-badge">Lançamento</div>
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-name">Elegance Floral</h3>
+                            <p class="product-category">Feminino</p>
+                            <span class="product-price">R$ 419,90</span>
+                            <button class="btn btn-primary btn-block">Comprar</button>
+                        </div>
+                    </div>
+
+                    <!-- Produto 3 -->
+                    <div class="product-card animate-on-scroll" style="transition-delay: 200ms;">
+                        <div class="product-img-wrapper">
+                            <img src="./assets/arabic.png" alt="Perfume Árabe Intenso" class="product-img">
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-name">Oud Intenso Árabe</h3>
+                            <p class="product-category">Unissex</p>
+                            <span class="product-price">R$ 549,90</span>
+                            <button class="btn btn-primary btn-block">Comprar</button>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="view-all-wrapper animate-on-scroll">
+                    <a href="#" class="btn btn-outline center">Ver todos os produtos</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- 4. About Section -->
+        <section class="about section" id="sobre">
+            <div class="container">
+                <div class="about-grid">
+                    <div class="about-content animate-on-scroll">
+                        <span class="section-tag">A Essência Suprema</span>
+                        <h2 class="section-title">Elegância e Autenticidade em cada frasco</h2>
+                        <p class="about-text">
+                            Desde nossa fundação, a Essência Suprema tem um único propósito: conectar pessoas às melhores fragrâncias do mundo. Acreditamos que o perfume é a assinatura invisível de quem o usa, capaz de eternizar momentos e expressar personalidades.
+                        </p>
+                        <p class="about-text">
+                            Trabalhamos exclusivamente com produtos 100% originais, garantindo qualidade incomparável e uma experiência de luxo desde o momento da escolha até a primeira borrifada.
+                        </p>
+                        <div class="about-features">
+                            <div class="feature">
+                                <i data-lucide="check-circle" class="gold-icon"></i>
+                                <span>100% Originais</span>
+                            </div>
+                            <div class="feature">
+                                <i data-lucide="award" class="gold-icon"></i>
+                                <span>Qualidade Premium</span>
+                            </div>
+                            <div class="feature">
+                                <i data-lucide="truck" class="gold-icon"></i>
+                                <span>Envio Seguro</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="about-image animate-on-scroll" style="transition-delay: 200ms;">
+                        <img src="./assets/floral.png" alt="Sofisticação da loja Essência Suprema" class="about-img">
+                        <div class="about-experience">
+                            <span class="exp-number">10+</span>
+                            <span class="exp-text">Anos de<br>Experiência</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 5. Testimonials Section -->
+        <section class="testimonials section" id="depoimentos">
+            <div class="container">
+                <div class="section-header animate-on-scroll">
+                    <h2 class="section-title">O que dizem nossos clientes</h2>
+                    <p class="section-subtitle">A satisfação de quem vive a experiência Essência Suprema.</p>
+                </div>
+
+                <div class="testimonials-grid">
+                    <div class="testimonial-card animate-on-scroll">
+                        <div class="stars">
+                            <i data-lucide="star" class="fill-gold"></i>
+                            <i data-lucide="star" class="fill-gold"></i>
+                            <i data-lucide="star" class="fill-gold"></i>
+                            <i data-lucide="star" class="fill-gold"></i>
+                            <i data-lucide="star" class="fill-gold"></i>
+                        </div>
+                        <p class="testimonial-text">"Comprei o perfume árabe e estou impressionado com a fixação. Mais de 12 horas na pele! A entrega foi super rápida e a embalagem é um luxo à parte."</p>
+                        <div class="testimonial-author">
+                            <div class="author-avatar">M</div>
+                            <div class="author-info">
+                                <h4>Marcelo Silva</h4>
+                                <span>Cliente Verificado</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="testimonial-card animate-on-scroll" style="transition-delay: 150ms;">
+                        <div class="stars">
+                            <i data-lucide="star" class="fill-gold"></i>
+                            <i data-lucide="star" class="fill-gold"></i>
+                            <i data-lucide="star" class="fill-gold"></i>
+                            <i data-lucide="star" class="fill-gold"></i>
+                            <i data-lucide="star" class="fill-gold"></i>
+                        </div>
+                        <p class="testimonial-text">"O Elegance Floral é simplesmente perfeito. Delicado mas marcante. A experiência de compra foi excelente e o atendimento impecável."</p>
+                        <div class="testimonial-author">
+                            <div class="author-avatar">C</div>
+                            <div class="author-info">
+                                <h4>Carolina Mendes</h4>
+                                <span>Cliente Verificada</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="testimonial-card animate-on-scroll" style="transition-delay: 300ms;">
+                        <div class="stars">
+                            <i data-lucide="star" class="fill-gold"></i>
+                            <i data-lucide="star" class="fill-gold"></i>
+                            <i data-lucide="star" class="fill-gold"></i>
+                            <i data-lucide="star" class="fill-gold"></i>
+                            <i data-lucide="star" class="fill-gold"></i>
+                        </div>
+                        <p class="testimonial-text">"Primeira vez comprando na Essência Suprema e ganharam um cliente fiel. O Perfume Amadeirado é autêntico e a atenção aos detalhes me surpreendeu muito."</p>
+                        <div class="testimonial-author">
+                            <div class="author-avatar">R</div>
+                            <div class="author-info">
+                                <h4>Ricardo Oliveira</h4>
+                                <span>Cliente Verificado</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 6. Contact Section -->
+        <section class="contact section" id="contato">
+            <div class="container">
+                <div class="contact-grid">
+                    <div class="contact-info animate-on-scroll">
+                        <h2 class="section-title">Entre em Contato</h2>
+                        <p class="contact-desc">Estamos aqui para ajudar você a encontrar sua assinatura olfativa perfeita. Fale com nossos consultores ou nos visite.</p>
+                        
+                        <ul class="contact-list">
+                            <li>
+                                <i data-lucide="map-pin" class="gold-icon"></i>
+                                <div>
+                                    <h4>Nossa Loja</h4>
+                                    <p>Av. das Essências, 1000 - Jardins<br>São Paulo - SP</p>
+                                </div>
+                            </li>
+                            <li>
+                                <i data-lucide="phone" class="gold-icon"></i>
+                                <div>
+                                    <h4>Telefone</h4>
+                                    <p>(11) 99999-9999</p>
+                                </div>
+                            </li>
+                            <li>
+                                <i data-lucide="mail" class="gold-icon"></i>
+                                <div>
+                                    <h4>Email</h4>
+                                    <p>contato@essenciasuprema.com.br</p>
+                                </div>
+                            </li>
+                        </ul>
+
+                        <div class="contact-social">
+                            <a href="#" aria-label="Instagram"><i data-lucide="instagram"></i></a>
+                            <a href="#" aria-label="Facebook"><i data-lucide="facebook"></i></a>
+                            <a href="#" aria-label="WhatsApp"><i data-lucide="message-circle"></i></a>
+                        </div>
+                    </div>
+
+                    <div class="contact-form-wrapper animate-on-scroll" style="transition-delay: 200ms;">
+                        <form class="contact-form" id="contactForm">
+                            <div class="form-group">
+                                <label for="name">Nome Completo</label>
+                                <input type="text" id="name" placeholder="Seu nome" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">E-mail</label>
+                                <input type="email" id="email" placeholder="seu.email@exemplo.com" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="message">Mensagem</label>
+                                <textarea id="message" rows="4" placeholder="Como podemos ajudar?" required></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary btn-block">Enviar Mensagem</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- 7. Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="#" class="logo">
+                        <span class="logo-text">Essência Suprema</span>
+                    </a>
+                    <p class="footer-desc">A mais alta perfumaria ao seu alcance. Descubra fragrâncias memoráveis e exclusivas.</p>
+                </div>
+                
+                <div class="footer-links">
+                    <h4 class="footer-title">Links Rápidos</h4>
+                    <ul>
+                        <li><a href="#inicio">Início</a></li>
+                        <li><a href="#produtos">Produtos</a></li>
+                        <li><a href="#sobre">Sobre a Loja</a></li>
+                        <li><a href="#contato">Contato</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-links">
+                    <h4 class="footer-title">Suporte</h4>
+                    <ul>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">Política de Entrega</a></li>
+                        <li><a href="#">Trocas e Devoluções</a></li>
+                        <li><a href="#">Termos de Uso</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2026 Essência Suprema. Todos os direitos reservados.</p>
+                <div class="footer-social-small">
+                    <a href="#"><i data-lucide="instagram"></i></a>
+                    <a href="#"><i data-lucide="facebook"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script src="script.js"></script>
+</body>
+</html>

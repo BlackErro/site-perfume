@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Essência Suprema - Perfumes Femininos. Fragrâncias delicadas e inesquecíveis.">
+    <title>Essência Suprema | Perfumes Femininos</title>
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+    
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://unpkg.com/lucide@latest/dist/umd/lucide.css">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="page-transition theme-feminino-bg">
+    <!-- 1. Header -->
+    <header class="header bg-stable" id="header">
+        <div class="container header-content">
+            <a href="index.html" class="logo">
+                <span class="logo-text">Essência Suprema</span>
+            </a>
+            
+            <nav class="nav" id="nav">
+                <ul class="nav-list">
+                    <li><a href="index.html" class="nav-link">Início</a></li>
+                    <li><a href="masculino.html" class="nav-link">Masculino</a></li>
+                    <li><a href="feminino.html" class="nav-link active">Feminino</a></li>
+                    <li><a href="index.html#contato" class="nav-link">Contato</a></li>
+                </ul>
+            </nav>
+
+            <a href="masculino.html" class="btn btn-outline nav-btn-hide">Ver Masculinos</a>
+            
+            <button class="mobile-menu-btn" id="mobile-menu-btn" aria-label="Abrir menu">
+                <i data-lucide="menu"></i>
+            </button>
+        </div>
+    </header>
+
+    <main class="page-padding">
+        <!-- Products Section -->
+        <section class="products section theme-feminino" id="produtos">
+            <div class="container">
+                <div class="section-header animate-on-scroll">
+                    <h1 class="section-title">Perfumes Femininos</h1>
+                    <p class="section-subtitle">Suaves, elegantes e profundamente graciosos.</p>
+                </div>
+
+                <div class="category-content active animate-on-scroll">
+                    <div class="products-grid">
+                        <div class="product-card card-light">
+                            <div class="product-img-wrapper">
+                                <img src="./assets/floral.png" alt="Floral Delicado" class="product-img">
+                                <div class="product-badge">Lançamento</div>
+                            </div>
+                            <div class="product-info">
+                                <h3 class="product-name">Floral Delicado</h3>
+                                <p class="product-desc">Um buquê suave de rosas brancas, jasmim e um toque de baunilha.</p>
+                                <span class="product-price">R$ 419,90</span>
+                                <a href="https://wa.me/5511999999999" target="_blank" class="btn btn-primary btn-block">Consultar</a>
+                            </div>
+                        </div>
+
+                        <div class="product-card card-light" style="transition-delay: 100ms;">
+                            <div class="product-img-wrapper">
+                                <img src="./assets/hero.png" alt="Doce Marcante" class="product-img">
+                            </div>
+                            <div class="product-info">
+                                <h3 class="product-name">Doce Marcante</h3>
+                                <p class="product-desc">Para mulheres decididas. Uma fusão de caramelo, praliné e frutas vermelhas.</p>
+                                <span class="product-price">R$ 389,90</span>
+                                <a href="https://wa.me/5511999999999" target="_blank" class="btn btn-primary btn-block">Consultar</a>
+                            </div>
+                        </div>
+
+                        <div class="product-card card-light" style="transition-delay: 200ms;">
+                            <div class="product-img-wrapper">
+                                <img src="./assets/arabic.png" alt="Oriental Elegante" class="product-img">
+                            </div>
+                            <div class="product-info">
+                                <h3 class="product-name">Oriental Elegante</h3>
+                                <p class="product-desc">O mistério do oriente envolto em notas de sândalo, musk e flores exóticas.</p>
+                                <span class="product-price">R$ 459,90</span>
+                                <a href="https://wa.me/5511999999999" target="_blank" class="btn btn-primary btn-block">Consultar</a>
+                            </div>
+                        </div>
+
+                        <div class="product-card card-light" style="transition-delay: 300ms;">
+                            <div class="product-img-wrapper">
+                                <img src="./assets/floral.png" alt="Fresco Sofisticado" class="product-img">
+                            </div>
+                            <div class="product-info">
+                                <h3 class="product-name">Fresco Sofisticado</h3>
+                                <p class="product-desc">Toques de orvalho da manhã fundidos a notas verdes leves e lírio do vale.</p>
+                                <span class="product-price">R$ 369,90</span>
+                                <a href="https://wa.me/5511999999999" target="_blank" class="btn btn-primary btn-block">Consultar</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="index.html" class="logo">
+                        <span class="logo-text">Essência Suprema</span>
+                    </a>
+                    <p class="footer-desc">A mais alta perfumaria ao seu alcance. Descubra fragrâncias memoráveis e exclusivas.</p>
+                </div>
+                
+                <div class="footer-links">
+                    <h4 class="footer-title">Coleções</h4>
+                    <ul>
+                        <li><a href="masculino.html">Perfumes Masculinos</a></li>
+                        <li><a href="feminino.html" class="active-link">Perfumes Femininos</a></li>
+                        <li><a href="index.html#sobre">Nossa História</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-links">
+                    <h4 class="footer-title">Atendimento</h4>
+                    <ul>
+                        <li><a href="index.html#contato">Fale Conosco</a></li>
+                        <li><a href="#">Política de Entrega</a></li>
+                        <li><a href="#">Trocas e Devoluções</a></li>
+                        <li><a href="#">Termos de Uso</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2026 Essência Suprema. Todos os direitos reservados.</p>
+                <div class="footer-social-small">
+                    <a href="#"><i data-lucide="instagram"></i></a>
+                    <a href="#"><i data-lucide="facebook"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script src="script.js"></script>
+</body>
+</html>

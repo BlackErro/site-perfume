@@ -34,30 +34,7 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
-    // 3. Active Nav Link on Scroll
-    const sections = document.querySelectorAll('section[id]');
-    
-    function scrollActive() {
-        const scrollY = window.pageYOffset;
-
-        sections.forEach(current => {
-            const sectionHeight = current.offsetHeight;
-            const sectionTop = current.offsetTop - 100;
-            const sectionId = current.getAttribute('id');
-            const navLink = document.querySelector(`.nav-list a[href*=${sectionId}]`);
-            
-            if(navLink) {
-                if(scrollY > sectionTop && scrollY <= sectionTop + sectionHeight){
-                    navLink.classList.add('active');
-                } else {
-                    navLink.classList.remove('active');
-                }
-            }
-        });
-    }
-    window.addEventListener('scroll', scrollActive);
-
-    // 4. Scroll Reveal Animations
+    // 3. Scroll Reveal Animations
     const observerOptions = {
         root: null,
         rootMargin: '0px',
@@ -76,44 +53,33 @@ document.addEventListener('DOMContentLoaded', () => {
     const animatedElements = document.querySelectorAll('.animate-on-scroll');
     animatedElements.forEach(el => observer.observe(el));
 
-    // 4.5 Category Tabs Logic
+    // 4. Category Tabs Logic
     const categoryBtns = document.querySelectorAll('.category-btn');
     const categoryContents = document.querySelectorAll('.category-content');
+    const productsSection = document.getElementById('produtos');
 
-    categoryBtns.forEach(btn => {
-        btn.addEventListener('click', () => {
-            categoryBtns.forEach(b => b.classList.remove('active'));
-            categoryContents.forEach(c => c.classList.remove('active'));
+    if (categoryBtns.length > 0) {
+        categoryBtns.forEach(btn => {
+            btn.addEventListener('click', () => {
+                categoryBtns.forEach(b => b.classList.remove('active'));
+                categoryContents.forEach(c => c.classList.remove('active'));
 
-            btn.classList.add('active');
-            const targetId = btn.getAttribute('data-target');
-            document.getElementById(`categoria-${targetId}`).classList.add('active');
-            
-            const newContent = document.getElementById(`categoria-${targetId}`);
-            newContent.style.animation = 'none';
-            setTimeout(() => {
-                newContent.style.animation = 'fadeIn 0.5s ease';
-            }, 10);
-        });
-    });
-
-    // 5. Form Submit (Mock)
-    const contactForm = document.getElementById('contactForm');
-    if(contactForm) {
-        contactForm.addEventListener('submit', (e) => {
-            e.preventDefault();
-            const btn = contactForm.querySelector('button[type="submit"]');
-            const originalText = btn.textContent;
-            
-            btn.textContent = 'Enviando...';
-            btn.disabled = true;
-
-            setTimeout(() => {
-                alert('Mensagem enviada com sucesso! Entraremos em contato em breve.');
-                contactForm.reset();
-                btn.textContent = originalText;
-                btn.disabled = false;
-            }, 1500);
+                btn.classList.add('active');
+                const targetId = btn.getAttribute('data-target');
+                document.getElementById(`categoria-${targetId}`).classList.add('active');
+                
+                // Trocar classe theme no container principal .products
+                productsSection.classList.remove('theme-masculino', 'theme-feminino');
+                productsSection.classList.add(`theme-${targetId}`);
+                
+                const newContent = document.getElementById(`categoria-${targetId}`);
+                newContent.style.animation = 'none';
+                setTimeout(() => {
+                    newContent.style.animation = 'fadeIn 0.5s ease';
+                }, 10);
+                
+                lucide.createIcons();
+            });
         });
     }
 });
